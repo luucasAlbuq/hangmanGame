@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<title>Hangman Game</title>
+		
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Imports Angular-->
+  		<script src="lib/angular/angular.js"></script>
+  		<script src="lib/angular/angular-route.js"></script>
+  		<script src="app.js"></script>
+  		<script src="service.js"></script>
+  		<script src="controller.js"></script>
+
+  		<!-- Bootstrap -->
+  		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+	    <link href="lib/bootstrap/css/elegant-icons-style.css" rel="stylesheet" />
+	    <link href="lib/bootstrap/css/font-awesome.min.css" rel="stylesheet" />
+	    <link href="lib/bootstrap/css/style.css" rel="stylesheet">
+	    <link href="lib/bootstrap/css/style-responsive.css" rel="stylesheet" />
+	</head>
+	
+	<body ng-controller="controller">
+		<div id="mainDiv">
+			<h1> Hangman Game </h1>
+			<button class="btn btn-danger" ng-click="startGame()"> START </button>
+			<button class="btn btn-danger" ng-click="nextWord()"> GIVE A WORD </button>
+			<button class="btn btn-danger" ng-click="guess()"> MAKE A GUESS </button>
+		</div>
+    
+	</body>
+</html>

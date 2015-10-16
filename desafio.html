@@ -1,0 +1,204 @@
+<style type="text/css">
+
+body{
+	background-color:#222222;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2{
+	font-size: 150%;
+}
+
+button{
+	color:#E6DFCF;
+	font-weight: bold;
+}
+
+#rectangle {
+	height: 600px;
+	width: 800px;
+	background: #313840;
+}
+
+#rectangleProfile{
+	height: 450px;
+	width: 330px;
+	background: #2F363E;
+	border-color: #171C20;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px -3px #1B1E23;
+}
+
+#rectangleProfileTop{
+	height: 150px;
+	width: 330px;
+	background: #E7DECD;
+	border-radius: 10px 10px 0px 0px;
+}
+#circle {
+	width: 170px;
+	height: 170px;
+	background: #E7DECD;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+	border-radius: 90px;
+	margin: -100px auto auto;
+}
+
+.button{
+	display: inline-block;
+	width: 160px;
+	height: 40px;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	background-color: #C44B30;
+	margin-left: 85px;
+	margin-top: 5px;
+}
+
+.borderButton {
+	border: 1px solid #171C22;
+	border-radius: 6px;
+	border-width: 1px;
+	position: relative;
+	z-index: 1;
+}
+
+.borderButton:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	border-top: solid 1px #D16E59;
+	border-top-radius: 6px;
+	width: 149px;
+	padding-bottom: 12px;
+	min-height: 100%;
+	z-index: 10;
+}
+
+.centro {
+	margin: 25px auto;
+}
+
+.centroRetanguloInterno {
+	margin: -550px auto auto;
+}
+
+.image {
+	width: 160px;
+	height: 160px;
+	border-radius: 90px;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	background-image: url("http://res.cloudinary.com/hrscywv4p/image/upload/v1437498435/56c0c49b63d081461657be84b007a6cf.jpg"); no-repeat;
+	margin: -165px auto auto auto;
+}
+
+.nameProfile{
+	color: #E7DECD;
+	margin: 30px auto 0px 75px;
+}
+
+.numberFont{
+	color:#191E24;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.jobTitle{
+	color:#565D67;
+	margin-top: 2px;
+	margin-left: 100px;
+}
+
+.footBox{
+	margin-top: 30px;
+}
+
+.marginFootBoxLeft{
+	border-style: solid;
+	border-width: 1px 1px 0px 0px;
+}
+
+.marginFootBoxRigth{
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+}
+
+.footBoxLeft{
+	float: left;
+	width: 50%;
+	height: 54px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.footBoxRight{
+	float: right;
+	width: 49.5%;
+	text-align: center;
+	line-height: 50px;
+}
+
+</style>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Lucas Albuquerque
+		</title>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<!-- Div geral -->
+		<div id="mainDiv">
+				<!-- Div do retangolo grande -->
+				<div class="centro" id="rectangle"></div>
+
+				<!-- Div do retangolo do PROFILE -->
+				<div class="centroRetanguloInterno" id="rectangleProfile">
+					<!-- Div da cor creme -->
+					<div  id="rectangleProfileTop"></div>
+					<!-- Div do circulo maior -->
+					<div id="circle"></div>
+					<!-- Div da imagem -->
+					<div class="image"></div>
+
+					<div id="infoProfile">
+						<h2 class="nameProfile">SARA ROBERTSON</h2>
+						<h4 class="jobTitle">GRAPHIC DESIGNER</h4>
+						<button type="button" class="button borderButton">FOLLOW</button>
+
+						<div class="footBox" id="footer">
+							<div class="marginFootBoxLeft footBoxLeft">
+									<span class="numberFont"> 399 </span>
+									<span style="color: #565D67;"> FOLLOWERS </span>
+							</div>
+							<div  class="marginFootBoxRigth footBoxRight">
+									<span class="numberFont"> 239 </span>
+									<span style="color: #565D67;"> FOLLOWING </span>
+							</div>
+						</div>
+					</div>
+				</div> <!-- FIM DA DIV DO PROFILE -->
+
+
+
+		</div><!-- FIM DA DIV GERAL -->
+	</body>
+
+</html>
