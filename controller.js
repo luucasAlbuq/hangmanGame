@@ -35,6 +35,17 @@ angular.module('app').controller('controller',['$scope','$rootScope','service',f
 		service.guess($scope.serverOut.sessionId, "P").then(function(sucess){
 			$scope.serverOut = sucess;	
 		});
-	}
+	};
+
+	$scope.getResult = function(){
+		if($scope.serverOut.sessionId === undefined){
+			alert("Ops! sessionId invalid!");
+			return;
+		}
+
+		service.getResult($scope.serverOut.sessionId).then(function(sucess){
+			$scope.serverOut = sucess;	
+		});
+	};
 
 }]);

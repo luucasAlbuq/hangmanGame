@@ -31,4 +31,12 @@ angular.module('app').service('service',['$http',function($http){
 		});
 	};
 
+	this.getResult = function(sessionId){
+		var data = {"sessionId":sessionId, "action":"getResult"};
+		return $http.post(RESQUEST_URL, data, config).then(function(response){
+			console.log("--------- GET RESULT",response.data);
+			return response.data;
+		});	
+	};
+
 }]);
