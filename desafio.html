@@ -22,7 +22,7 @@ button{
 
 #rectangleProfile{
 	height: 450px;
-	width: 330px;
+	width: 340px;
 	background: #2F363E;
 	border-color: #171C20;
 	border-width: 1px;
@@ -33,7 +33,7 @@ button{
 
 #rectangleProfileTop{
 	height: 150px;
-	width: 330px;
+	width: 340px;
 	background: #E7DECD;
 	border-radius: 10px 10px 0px 0px;
 }
@@ -44,13 +44,36 @@ button{
 	-moz-border-radius: 90px;
 	-webkit-border-radius: 90px;
 	border-radius: 90px;
-	margin: -100px auto auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -105;
+}
+
+.smallCircle{
+		width: 4px;
+		height: 4px;
+		background: #F1E9DE;
+		-moz-border-radius: 90px;
+		-webkit-border-radius: 90px;
+		border-radius: 90px;
+		float: left;
+		margin: 1.5px;
+		box-shadow:  0px -5.7px 1px -4.5px #CDC2B0 inset;
+    -moz-box-shadow:  0px -5.7px 1px -4.5px #CDC2B0 inset;
+		-webkit-box-shadow:  0px -5.7px 1px -4.5px #CDC2B0 inset;
+}
+
+.centerSmallCircle{
+    width: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
 }
 
 .button{
 	display: inline-block;
-	width: 160px;
-	height: 40px;
+	width: 170px;
+	height: 36px;
 	padding: 6px 12px;
 	margin-bottom: 0px;
 	font-size: 14px;
@@ -64,6 +87,7 @@ button{
 	background-color: #C44B30;
 	margin-left: 85px;
 	margin-top: 5px;
+	margin-top: -1px;
 }
 
 .borderButton {
@@ -72,6 +96,7 @@ button{
 	border-width: 1px;
 	position: relative;
 	z-index: 1;
+
 }
 
 .borderButton:before {
@@ -82,7 +107,7 @@ button{
 	left: 4px;
 	border-top: solid 1px #D16E59;
 	border-top-radius: 6px;
-	width: 149px;
+	width: 160px;
 	padding-bottom: 12px;
 	min-height: 100%;
 	z-index: 10;
@@ -102,13 +127,17 @@ button{
 	border-radius: 90px;
 	-webkit-border-radius: 90px;
 	-moz-border-radius: 90px;
-	background-image: url("http://res.cloudinary.com/hrscywv4p/image/upload/v1437498435/56c0c49b63d081461657be84b007a6cf.jpg"); no-repeat;
+	background-image: url("imagem.jpg"); no-repeat;
 	margin: -165px auto auto auto;
+
 }
 
 .nameProfile{
 	color: #E7DECD;
-	margin: 30px auto 0px 75px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 38px;
+	width: 230px;
 }
 
 .numberFont{
@@ -119,28 +148,36 @@ button{
 
 .jobTitle{
 	color:#565D67;
-	margin-top: 2px;
-	margin-left: 100px;
+	margin-left: auto;
+	width: 165px;
+	margin-right: auto;
+	margin-top: -17px;
 }
 
 .footBox{
-	margin-top: 30px;
+	margin-top: 37px;
 }
 
 .marginFootBoxLeft{
 	border-style: solid;
 	border-width: 1px 1px 0px 0px;
+	box-shadow: -1px 1px 0px 0px #3C404B inset;
+	-moz-box-shadow:  -1px 1px 0px 0px #3C404B inset;
+	-webkit-box-shadow:  -1px 1px 0px 0px #3C404B inset;
 }
 
 .marginFootBoxRigth{
 	border-style: solid;
 	border-width: 1px 0px 0px 0px;
+	box-shadow: 1px 1px 0px 0px #3C404B inset;
+	-moz-box-shadow:  1px 1px 0px 0px #3C404B inset;
+	-webkit-box-shadow:  1px 1px 0px 0px #3C404B inset;
 }
 
 .footBoxLeft{
 	float: left;
 	width: 50%;
-	height: 54px;
+	height: 56px;
 	text-align: center;
 	line-height: 50px;
 }
@@ -171,8 +208,33 @@ button{
 
 				<!-- Div do retangolo do PROFILE -->
 				<div class="centroRetanguloInterno" id="rectangleProfile">
+
+
 					<!-- Div da cor creme -->
-					<div  id="rectangleProfileTop"></div>
+					<div  id="rectangleProfileTop">
+						<div class="centerSmallCircle">
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+						</div>
+						<div class="centerSmallCircle">
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+						</div>
+              <div class="centerSmallCircle">
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+							<div class="smallCircle"></div>
+						</div>
+
+					</div>
+
+
+
 					<!-- Div do circulo maior -->
 					<div id="circle"></div>
 					<!-- Div da imagem -->
@@ -185,10 +247,10 @@ button{
 
 						<div class="footBox" id="footer">
 							<div class="marginFootBoxLeft footBoxLeft">
-									<span class="numberFont"> 399 </span>
+									<span class="numberFont"> 383 </span>
 									<span style="color: #565D67;"> FOLLOWERS </span>
 							</div>
-							<div  class="marginFootBoxRigth footBoxRight">
+							<div class="marginFootBoxRigth footBoxRight">
 									<span class="numberFont"> 239 </span>
 									<span style="color: #565D67;"> FOLLOWING </span>
 							</div>

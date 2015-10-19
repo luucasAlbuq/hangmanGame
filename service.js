@@ -24,7 +24,7 @@ angular.module('app').service('service',['$http',function($http){
 	};
 
 	this.guess = function(sessionId,letter){
-		var data = {"sessionId":sessionId, "action":"nextWord","guess":letter};
+		var data = {"sessionId":sessionId, "action":"guessWord","guess":letter};
 		return $http.post(RESQUEST_URL, data, config).then(function(response){
 			console.log("--------- MAKE A GUESS",response.data);
 			return response.data;
