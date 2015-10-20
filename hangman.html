@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<style type="text/css">
+button{
+margin-left: auto; margin-right: auto; width: -moz-available;
+}
+.center{
+	margin-left: auto; margin-right: auto; width: -moz-max-content;
+}
+</style>
+
 <html ng-app="app">
 	<head>
 		<title>Hangman Game</title>
@@ -22,12 +31,9 @@
 	</head>
 	
 	<body ng-controller="controller">
-		<div id="mainDiv">
+		<div id="mainDiv" class="center">
 			<h1> Hangman Game </h1>
 			<button class="btn btn-danger" ng-click="startGame()"> START </button>
-			<button class="btn btn-danger" ng-click="nextWord()"> GIVE A WORD </button>
-			<button class="btn btn-danger" ng-click="guess()"> MAKE A GUESS </button>
-			<button class="btn btn-danger" ng-click="getResult()"> RESULT </button>
 		</div>
     
 	</body>

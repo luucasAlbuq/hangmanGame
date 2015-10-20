@@ -39,4 +39,12 @@ angular.module('app').service('service',['$http',function($http){
 		});	
 	};
 
+	this.submit = function(sessionId){
+		var data = {"sessionId":sessionId, "action":"submitResult"};
+		return $http.post(RESQUEST_URL, data, config).then(function(response){
+			console.log("--------- SUBMIT RESULT",response.data);
+			return response.data;
+		});
+	};
+
 }]);
