@@ -5,6 +5,7 @@ angular.module('app').service('service',['$http',function($http){
 
 	var config = {headers:{"Content-Type": "application/json","playerId":playerId}};
 
+	
 	/* Start the Game */
 	this.startGame = function(){
 		var data  = {"playerId":playerId, "action":"startGame"};
