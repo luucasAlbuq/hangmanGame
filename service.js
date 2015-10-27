@@ -2,10 +2,9 @@ angular.module('app').service('service',['$http',function($http){
 
 	var playerId = "lucas.ufcg@gmail.com";
 	var RESQUEST_URL = "https://strikingly-hangman.herokuapp.com/game/on";
-	
+
 	var config = {headers:{"Content-Type": "application/json","playerId":playerId}};
 
-	
 	/* Start the Game */
 	this.startGame = function(){
 		var data  = {"playerId":playerId, "action":"startGame"};
@@ -36,7 +35,7 @@ angular.module('app').service('service',['$http',function($http){
 		return $http.post(RESQUEST_URL, data, config).then(function(response){
 			console.log("--------- GET RESULT",response.data);
 			return response.data;
-		});	
+		});
 	};
 
 	this.submit = function(sessionId){
